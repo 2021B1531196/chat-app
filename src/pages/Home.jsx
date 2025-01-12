@@ -1,8 +1,12 @@
 import React from 'react'
 import "../pages/Home.css"
+import { Sidebar } from '../components/Sidebar'
 
-export const Home = () => {
+export const Home = ({sidebar}) => {
   return (
-    <div>Home</div>
+    <>
+        <Sidebar sidebar={sidebar}/>
+    
+    </>
   )
 }
