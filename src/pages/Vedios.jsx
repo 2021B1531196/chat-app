@@ -1,9 +1,13 @@
 import React from 'react'
 import "../pages/Vedios.css"
+import PlayVideo from './PlayVideo'
 
-function Vedios() {
+const Vedios = () => {
   return (
-    <div>Vedios</div>
+    <div className='play-container'>
+      <PlayVideo/>
+
+    </div>
   )
 }
 
