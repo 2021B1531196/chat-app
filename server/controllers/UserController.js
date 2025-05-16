@@ -1,4 +1,4 @@
-import { generateToken } from "../lib/utils";
+import {generateToken} from "../lib/utils.js"
 import User from "../models/User";
 import bcrypt from "bcryptjs";
 import cloudinary from "../lib/cloudinary.js";
@@ -7,7 +7,7 @@ import cloudinary from "../lib/cloudinary.js";
 
 
 //Signup a new User
-export const signup = async ()=>{
+export const signup = async (req,res)=>{
     const {fullName,email,password,bio}=req.body;
 
     try{
